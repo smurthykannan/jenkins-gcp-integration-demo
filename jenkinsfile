@@ -4,7 +4,7 @@ pipeline {
         PROJECT_ID = 'manpasandhprod'
         CLUSTER_NAME = 'cluster-temp'
         LOCATION = 'asia-south1-a'
-        CREDENTIALS_ID = 'multi-k8s'
+        CREDENTIALS_ID = 'tm_jenkins'
     }
     stages {
         stage("Checkout code") {
@@ -15,7 +15,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("<<Your DockerHub username>>/hello:${env.BUILD_ID}")
+                    myapp = docker.build("smurthykannan@gmail.com/hello:${env.BUILD_ID}")
                 }
             }
         }
