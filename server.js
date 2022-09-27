@@ -19,5 +19,9 @@ app.get('/upahar', function (req, res) {
 res.send('Hello upahar\n');
 });
 
+app.get('/anand', function (req, res) {
+res.send('Hello anand\n');
+});
+
 app.listen(PORT);
 console.log('Running on http://localhost:' + PORT);
