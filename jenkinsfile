@@ -4,7 +4,7 @@ pipeline {
         PROJECT_ID = 'manpasandhprod'
         CLUSTER_NAME = 'cluster-temp'
         LOCATION = 'asia-south1-a'
-        CREDENTIALS_ID = 'tm_jenkins'
+        CREDENTIALS_ID = 'manpasandprod'
     }
     stages {
         stage("Checkout code") {
