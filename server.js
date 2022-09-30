@@ -23,7 +23,7 @@ app.get('/anand', function (req, res) {
   res.send('Hello anand\n');
   });
 
-app.get('/anand', function (req, res) {
+app.get('/ayush', function (req, res) {
     res.send('Hello anand\n');
     });
 
